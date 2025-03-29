@@ -1,0 +1,6 @@
+[project]
+name = "collatz"
+version = "O.0.1"
+description = "A simple project demonstrating the Collatz Conjecture"
+license = "MIT"
+license-files = ["LICEN[CS]E*"]

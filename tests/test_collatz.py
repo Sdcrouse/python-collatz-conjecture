@@ -1,6 +1,6 @@
 import unittest
 
-from src.collatz.collatz_conjecture import collatz
+from collatz.collatz_conjecture import collatz
 
 class TestCollatzConjecture(unittest.TestCase):
     

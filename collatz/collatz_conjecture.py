@@ -35,6 +35,8 @@ def collatz(number):
     collatz_numbers = [str(number)]
 
     while True:
+        # Put this if/else logic into a separate method and test it. Then, delete this comment.
+        # I may want to do something similar with the main_loop() method and test with valid/invalid inputs.
         if number % 2 == 0:
             number //= 2
         else:

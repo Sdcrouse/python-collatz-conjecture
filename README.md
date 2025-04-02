@@ -16,14 +16,13 @@ This project was made with Python 3.13.2 (the latest version as of March 2025). 
 
 ## Usage
 
-To run this app, run these commands in the command line:
+First, fork and clone this project. Then, start the app by running the following commands in the command line:
 
 1. `cd python-collatz-conjecture`
-2. `python ./src/collatz/main.py`
+2. `python main.py`
+    - (**Note:** If you're using Windows and you would rather not mess with adding Python to your PATH variable, you can run `py main.py` instead.)
 
-Or, alternatively, `cd` into `/python-collatz-conjecture/src/collatz/` and run `python main.py`.
-
-Either way, follow the prompts and have fun!
+Follow the prompts and have fun!
 
 ## License
 

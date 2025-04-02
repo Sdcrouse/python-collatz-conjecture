@@ -1,6 +1,6 @@
 import unittest
 
-from collatz.collatz_conjecture import collatz
+from collatz.collatz_conjecture import collatz, get_next_number
 
 class TestCollatzConjecture(unittest.TestCase):
     
@@ -23,6 +23,13 @@ class TestCollatzConjecture(unittest.TestCase):
 
         self.assertEqual('5', collatz_string[0], 'Generated Collatz string should start with the original number')
         self.assertEqual('1', collatz_string[-1], 'Generated Collatz string should end with 1')
+
+    def test_get_next_number(self):
+        even_collatz_number = 8
+        self.assertEqual(4, get_next_number(even_collatz_number), 'When the number is even, divide it by 2')
+
+        odd_collatz_number = 5
+        self.assertEqual(16, get_next_number(odd_collatz_number), 'When the number is odd, multiply it by 3 and add 1')
 
 if __name__ == '__main__':
     unittest.main()

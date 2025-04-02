@@ -35,13 +35,7 @@ def collatz(number):
     collatz_numbers = [str(number)]
 
     while True:
-        # Put this if/else logic into a separate method and test it. Then, delete this comment.
-        # I may want to do something similar with the main_loop() method and test with valid/invalid inputs.
-        if number % 2 == 0:
-            number //= 2
-        else:
-            number = number * 3 + 1
-        
+        number = get_next_number(number)
         collatz_numbers.append(str(number))
 
         if number == 1:
@@ -50,6 +44,14 @@ def collatz(number):
     collatz_sequence = ' -> '.join(collatz_numbers)
 
     return collatz_sequence
+
+def get_next_number(number):
+    if number % 2 == 0:
+        number //= 2
+    else:
+        number = number * 3 + 1
+
+    return number
 
 def good_bye():
     print('\nThanks for trying out the Collatz Conjecture! Goodbye.')

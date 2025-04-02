@@ -20,7 +20,8 @@ def main_loop():
             if number <= 0:
                 print('The number must be greater than 0. Please try again.')
             else:
-                collatz(number)
+                print('Here is the Collatz sequence:')
+                print(collatz(number))
 
                 quit = input('\nWould you like to try another number? (Y/n) ').lower()
                 if quit == 'n' or quit == 'no':
@@ -46,8 +47,7 @@ def collatz(number):
 
     collatz_sequence = ' -> '.join(collatz_numbers)
 
-    print('Here is the Collatz sequence:')
-    print(collatz_sequence)
+    return collatz_sequence
 
 def good_bye():
     print('\nThanks for trying out the Collatz Conjecture! Goodbye.')

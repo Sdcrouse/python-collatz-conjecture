@@ -24,6 +24,14 @@ First, fork and clone this project. Then, start the app by running the following
 
 Follow the prompts and have fun!
 
+## Testing
+
+The tests for this project were created with the `unittest` library.
+
+To run the tests, first make sure that you are in the `python-collatz-conjecture` directory. Then, run the following command: `python -m unittest tests.test_collatz`.
+
+(**Note:** If you're using Windows and you would rather not mess with adding Python to your PATH variable, you can run `py -m unittest tests.test_collatz` instead.)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).

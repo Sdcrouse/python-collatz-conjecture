@@ -24,6 +24,10 @@ First, fork and clone this project. Then, start the app by running the following
 
 Follow the prompts and have fun!
 
+**Here is a typical usage example:**
+
+![Usage Example](img/cli_screenshot.png)
+
 ## Testing
 
 The tests for this project were created with the `unittest` library.

@@ -17,6 +17,9 @@ def main_loop():
     while True:
         try:
             number = int(input('\nEnter a number: '))
+        except ValueError:
+            print('Invalid input. Please try again.')
+        else:
             if number <= 0:
                 print('The number must be greater than 0. Please try again.')
             else:
@@ -28,8 +31,6 @@ def main_loop():
                     break
                 elif quit != 'y' and quit != 'yes':
                     print('Invalid choice.')
-        except ValueError:
-            print('Invalid input. Please try again.')
 
 def collatz(number):
     collatz_numbers = [str(number)]
